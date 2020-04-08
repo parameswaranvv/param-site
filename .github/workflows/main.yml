@@ -39,8 +39,13 @@ jobs:
       - name: Deploy Code
         run: |
           cd parameswaranvv.github.io
-          git config --global user.email "parameswaranvv@gmail.com"
-          git config --global user.name "Param"
+          git config --local user.email "parameswaranvv@gmail.com"
+          git config --local user.name "Param"
           git add --all
           git commit -m "Deploying files"
-          git push origin master
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          directory: parameswaranvv.github.io
