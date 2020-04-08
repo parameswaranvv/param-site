@@ -1,0 +1,242 @@
+# showcase
+showcase:
+  enable: true
+  title: "Hello, I’m Param"
+  subtitle: "Cloud Native Solutions Architect & Engineer"
+  description: "I currently work at <b>VMware</b> with the sole purpose of helping customers <b>modernize applications</b> the public/private cloud, and <b>transform their organization to move and deliver faster.</b>"
+  image:
+    x: "img/showcase/showcase.png"
+    _2x: "img/showcase/showcase@2x.png"
+  imageMobile:
+    x: "img/showcase/showcase-mobile.jpg"
+
+  button:
+    icon: "icon-mail-fill"
+    btnText: "Contact"
+    URL: "#/contact/"
+
+  socialLinks:
+    - icon: "linkedin"
+      URL: "https://www.linkedin.com/in/parameswaranvv/"
+
+    - icon: "github"
+      URL: "https://github.com/parameswaranvv"
+
+    - icon: "twitter"
+      URL: "https://twitter.com/parameswaranvv"
+
+# about
+about:
+  enable: true
+  title: "Who am I?"
+  content: '<p class="lead">
+    I am a results-driven solutions architect and full stack engineer with expertise in leading modernization and transformation engagements.
+    I have expertise in multiple cloud platforms like <b>Amazon Web Services, VMware Tanzu, Cloud Foundry and Azure</b>.
+    </p>
+    <p class="lead">
+    I am a <b>Certified Kubernetes Application Developer</b>, with expertise in decomposing monolithic architectures, using modern <b>Domain Driven Design</b> techniques
+     like <b>Event Storming</b>, BORIS drill-down, and adopting <b>Design Thinking</b> and XP principles with TDD to establish a faster rate of quality delivery.
+    </p>'
+  button:
+    icon: "icon-smile-fill"
+    btnText: "About Me"
+    URL: "https://www.linkedin.com/in/parameswaranvv/"
+  image:
+    x: "images/profile.png"
+    _2x: "images/profile.png"
+
+# education
+education:
+  enable: true
+  title: "Education"
+  items:
+    - university: "Amrita Vishwa Vidyapeetham"
+      year: "2004-2008"
+      degree: "Bachelor of Technology (Information Technology)"
+
+# experience
+experience:
+  enable: true
+  jobhistory:
+    title: "Job History"
+    descriptionLine1: "Results driven hands-on Engineer/Architect with experience in spearheading the design, development, implementation and testing of Cloud Native IT Solutions using Domain Driven Design in the Java/JEE Platform."
+    descriptionLine2: "Recognized Technology Leader, applying high impact technical solutions primarily by the use of Open Source Java Technologies/Frameworks to major business objectives, with capabilities that transcend IT Operation boundaries."
+    descriptionLine3: "Adept with working at a leadership capacity to prioritize activities and achieve defined project objectives; able to effectively translate business requirements into the target technical solutions.
+    Committed to helping the organization steer the delivery along with meticulous testing, QA, research, development and implementation of technologies."
+    items:
+      - title: "Senior Member of Technical Staff"
+        company: "VMware Inc."
+        duration: "Jan 2020 - Current"
+
+      - title: "Senior Solutions Architect"
+        company: "Pivotal Software Inc."
+        duration: "Sept 2018 - Dec 2019"
+
+      - title: "Senior Software Engineer"
+        company: "Capital One Financial Services"
+        duration: "Jan 2017 - Sept 2018"
+
+      - title: "Software Engineer"
+        company: "Capital One Financial Services"
+        duration: "Dec 2015 - Dec 2016"
+
+      - title: "Senior Java Developer"
+        company: "KForce Inc."
+        duration: "Jun 2015 - Dec 2015"
+
+      - title: "Lead Java Developer"
+        company: "Tata Consultancy Services Ltd."
+        duration: "Oct 2008 - June 2015"
+
+  skills:
+    title: Skills
+    items:
+      - Java/JEE
+      - Spring
+      - Microservices
+      - Amazon Web Services (AWS), Azure
+      - Pivotal Cloud Foundry (PCF)
+      - Devops - CI/CD
+      - Agile XP, TDD
+      - RESTful Architecture
+      - Event Driven Design
+      - Docker
+      - Kubernetes
+      - React & Typescript
+      - Domain Driven Design
+      - Application Modernization & Replatforming
+
+  button:
+    icon: "icon-linkedin-fill"
+    btnText: "Linkedin"
+    URL: "https://www.linkedin.com/in/parameswaranvv/"
+  button2:
+    icon: "icon-profile-fill"
+    btnText: "Download My Resume"
+    URL: "#"
+
+# Client & Work
+client_and_work:
+  title: "Clients & Works"
+  enable: true
+
+  clients:
+    - logo:
+        x: "img/clients/asgardia.png"
+        _2x: "img/clients/asgardia@2x.png"
+      alt: "Asgardia"
+
+    - logo:
+        x: "img/clients/earth-2.png"
+        _2x: "img/clients/earth-2@2x.png"
+      alt: "Earth 2.0"
+
+    - logo:
+        x: "img/clients/goldline.png"
+        _2x: "img/clients/goldline@2x.png"
+      alt: "Goldline"
+
+    - logo:
+        x: "img/clients/kanba.png"
+        _2x: "img/clients/kanba@2x.png"
+      alt: "Kanba"
+
+    - logo:
+        x: "img/clients/zoo-tv.png"
+        _2x: "img/clients/zoo-tv@2x.png"
+      alt: "Zoo"
+
+    - logo:
+        x: "img/clients/ztos.png"
+        _2x: "img/clients/ztos@2x.png"
+      alt: "Ztos"
+
+  works:
+    - title: "Radity Finance - UI Kit"
+      description: "We have been receiving a lot of requests for a Finance Kit recently due to the popularity of Fintech."
+      button:
+        icon: "icon-arrow-right"
+        btnText: "Case Study"
+        URL: "#"
+      image:
+        x: "img/works/radity-finance.jpg"
+        _2x: "img/works/radity-finance@2x.jpg"
+      is_even: true
+
+    - title: "Swiss Fintech Website"
+      description: "The Swiss Finance + Technology Association is the leading FinTech hub in Switzerland."
+      button:
+        icon: "icon-arrow-right"
+        btnText: "Case Study"
+        URL: "#"
+      image:
+        x: "img/works/swissfintech.jpg"
+        _2x: "img/works/swissfintech@2x.jpg"
+      is_even: false
+
+    - title: "Robo Advisor"
+      description: "Robo Advisor is a Swiss Wealth Manager and wants to create the best digital experience for its UNHW clients across the world. We started with a whiteboard."
+      button:
+        icon: "icon-arrow-right"
+        btnText: "Case Study"
+        URL: "#"
+      image:
+        x: "img/works/robo-advisor.jpg"
+        _2x: "img/works/robo-advisor@2x.jpg"
+      is_even: true
+
+# testimonial
+testimonial:
+  enable: true
+  title: "Testimonials"
+  items:
+    - name: "Daniel Jordan"
+      position: "Phonet, CEO"
+      content: "Cold calling can be a great way to generate quality leads. You get to speak to the gatekeepers and stakeholders, and you get a great insight into their requirements and influences. But cold calling is an art-form. It can be daunting, it’s always a lot of work, and you always need to make a good impression."
+      image:
+        x: "img/testimonials/daniel-jordan.jpg"
+        _2x: "img/testimonials/daniel-jordan@2x.jpg"
+
+    - name: "Jonathan Peters"
+      position: "Textic, CEO"
+      content: "Whether you or your loved one is encountering the natural decrease in mobility that occurs with the passing of time, or deals with an illness-related lack of physical agility, a stair lift can be the ideal way to put you in charge of your home again. Regardless of the shape or make of your living accommodation."
+      image:
+        x: "img/testimonials/jonathan-peters.jpg"
+        _2x: "img/testimonials/jonathan-peters@2x.jpg"
+
+    - name: "Antonio Willis"
+      position: "Cyberse, CEO"
+      content: "In this digital generation where information can be easily obtained within seconds, business cards still have retained their importance in the achievement of increased business exposure and business sales. If your business already has a bunch of printed cards distributed to a number of potential customers and yet."
+      image:
+        x: "img/testimonials/antonio-willis.jpg"
+        _2x: "img/testimonials/antonio-willis@2x.jpg"
+
+# contact
+contact:
+  enable: true
+  title: "Contact"
+  form:
+    action: "#"
+    full_name: "Full Name"
+    email: "Email Address"
+    message: "Type Your Message Here"
+  phone:
+    title: "Phone Number"
+    number: "+41 (44) 505 10 99"
+  email:
+    title: "Email"
+    email: '<a href="mailto:team@radity.com">team@radity.com</a>'
+  address:
+    title: "Address"
+    address: "Radity GmbH<br />Max-Bill-Platz 5, 8050 Zürich"
+  button:
+    icon: "icon-mail-fill"
+    btnText: "Send Message"
+
+# newsletter
+newsletter:
+  enable: true
+  title: "Newsletter subscription"
+  success_message: "Successfully subscribed"
+  error_message: "Error while subscribing."
+  note: "We'll never share your email with anyone else."
