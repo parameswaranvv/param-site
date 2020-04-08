@@ -6,7 +6,7 @@ name: CI
 # events but only for the master branch
 on:
   push:
-    branches: [ dev ]
+    branches: [ master ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -18,28 +18,27 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - name: Checkout Code
+        uses: actions/checkout@v2
         with:
           submodules: true
 
-      - name: Prepare tag
-        id: prepare_tag
-        if: startsWith(github.ref, 'refs/tags/')
+      - name: Cleanup cache
         run: |
-          TAG_NAME="${GITHUB_REF##refs/tags/}"
-          echo "::set-output name=tag_name::${TAG_NAME}"
-          echo "::set-output name=deploy_tag_name::deploy-${TAG_NAME}"
-
-      - run: |
           rm -rf node_modules/gh-pages/.cache
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-#          publish_dir: ./public
-          publish_branch: master  # deploying branch
-          keep_files: false
-          force_orphan: true
-          tag_name: ${{ steps.prepare_tag.outputs.deploy_tag_name }}
-          tag_message: 'Deployment ${{ steps.prepare_tag.outputs.tag_name }}'
+          hugo-version: '0.68.3'
+          # extended: true
+
+      - name: Build
+        run: hugo
+
+      - name: Deploy Code
+        run: |
+          cd parameswaranvv.github.io
+          git add --all
+          git commit -m "Deploying files"
+          git push origin master
