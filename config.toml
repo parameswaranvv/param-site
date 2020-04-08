@@ -34,12 +34,12 @@ publishDir = "parameswaranvv.github.io"
 
   [[menu.header]]
   name = "Resume"
-  URL = "#resume"
+  URL = "docs/resume.pdf"
   weight = 3
 
   [[menu.header]]
-  name = "Contact"
-  URL = "#contact"
+  name = "Blog"
+  URL = "https://gandalf.github.io"
   weight = 4
 
 
