@@ -39,6 +39,8 @@ jobs:
       - name: Deploy Code
         run: |
           cd parameswaranvv.github.io
+          git config --global user.email "parameswaranvv@gmail.com"
+          git config --global user.name "Param"
           git add --all
           git commit -m "Deploying files"
           git push origin master
