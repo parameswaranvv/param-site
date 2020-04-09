@@ -42,6 +42,21 @@ publishDir = "parameswaranvv.github.io"
   URL = "/blog"
   weight = 4
 
+  [[menu.blog]]
+  name = "About"
+  URL = "/#about"
+  weight = 2
+
+  [[menu.blog]]
+  name = "Resume"
+  URL = "/docs/resume.pdf"
+  weight = 3
+
+  [[menu.blog]]
+  name = "Blog"
+  URL = "/blog"
+  weight = 4
+
 
 [params]
 
