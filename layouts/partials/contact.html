@@ -1,0 +1,60 @@
+{{ if .Site.Data.homepage.contact.enable }}
+<section id="contact" class="section section--contact pt-0">
+    <div class="container">
+        <div class="contact">
+            <h2>{{ .Site.Data.homepage.contact.title }}</h2>
+            <div class="row pt-2">
+                <div class="col-12 col-lg-7">
+
+                    <script
+                            src="http://code.jquery.com/jquery-3.4.1.min.js"
+                            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+                            crossorigin="anonymous"></script>
+                    <script type="text/javascript">var submitted=false;</script>
+                    <script type="text/javascript">
+                        $('#gform').on('submit', function(e) {
+                            $('#gform *').fadeOut(10000);
+                            $('#gform').prepend('Your submission has been processed...');
+                        });
+                    </script>
+
+                    <form name="gform" id="gform" enctype="text/plain" action="{{ .Site.Data.homepage.contact.form.action }}"  target="hidden_iframe" onsubmit="submitted=true;">
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <input type="text" name="entry.62080222" id="entry.62080222"
+                                       placeholder="{{ .Site.Data.homepage.contact.form.full_name }}"/>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="text" name="entry.1389974684" id="entry.1389974684"
+                                       placeholder="{{ .Site.Data.homepage.contact.form.email }}"/>
+                            </div>
+                        </div>
+                        <div class="row pt-4">
+                            <div class="col-12">
+                                <textarea name="entry.273216094" id="entry.273216094"
+                                          cols="30" rows="3" placeholder="{{ .Site.Data.homepage.contact.form.message }}"></textarea>
+                            </div>
+                        </div>
+                        <div class="row pt-4">
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="{{ .Site.Data.homepage.contact.button.icon }}"></i>
+                                    {{ .Site.Data.homepage.contact.button.btnText }}
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 col-lg-5 contact__info">
+                    <h4>{{ .Site.Data.homepage.contact.phone.title }}</h4>
+                    <span>{{ .Site.Data.homepage.contact.phone.number }}</span>
+                    <h4>{{ .Site.Data.homepage.contact.email.title }}</h4>
+                    <span>{{ .Site.Data.homepage.contact.email.email | safeHTML }}</span>
+                    <h4>{{ .Site.Data.homepage.contact.address.title }}</h4>
+                    <span>{{ .Site.Data.homepage.contact.address.address | safeHTML }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

@@ -13,7 +13,7 @@ showcase:
   button:
     icon: "icon-mail-fill"
     btnText: "Contact"
-    URL: "#/contact/"
+    URL: "#contact_form"
 
   socialLinks:
     - icon: "linkedin"
@@ -216,19 +216,13 @@ contact:
   enable: true
   title: "Contact"
   form:
-    action: "#"
+    action: "https://docs.google.com/forms/d/e/1FAIpQLSf8vGOSA3AiN0ccvSd2tFDXp9uqdSSLdtUHvRtEfFiuMT_49w/formResponse?usp=pp_url"
     full_name: "Full Name"
     email: "Email Address"
     message: "Type Your Message Here"
-  phone:
-    title: "Phone Number"
-    number: "+41 (44) 505 10 99"
   email:
     title: "Email"
-    email: '<a href="mailto:team@radity.com">team@radity.com</a>'
-  address:
-    title: "Address"
-    address: "Radity GmbH<br />Max-Bill-Platz 5, 8050 Zürich"
+    email: '<a href="mailto:parameswaranvv@gmail.com">parameswaranvv@gmail.com</a>'
   button:
     icon: "icon-mail-fill"
     btnText: "Send Message"
