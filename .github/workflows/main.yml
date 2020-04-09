@@ -55,7 +55,7 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          deploy_key: ${{ secrets.GHActions }}
+          deploy_key: ${{ secrets.GHPAGESTOKEN }}
           external_repository: parameswaranvv/parameswaranvv.github.io
           publish_dir: ./parameswaranvv.github.io
           user_name: 'Param'
