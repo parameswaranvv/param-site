@@ -1,7 +1,7 @@
 baseURL = "https://parameswaranvv.github.io"
 languageCode = "en-us"
 title = "Some insights and solutions"
-theme = "raditian-free-hugo-theme"
+theme = ["raditian-free-hugo-theme", "hugo-future-imperfect-slim"]
 publishDir = "parameswaranvv.github.io"
 
 # Plugins
@@ -39,7 +39,7 @@ publishDir = "parameswaranvv.github.io"
 
   [[menu.header]]
   name = "Blog"
-  URL = "https://gandalf.github.io"
+  URL = "/blog"
   weight = 4
 
 
@@ -53,3 +53,26 @@ publishDir = "parameswaranvv.github.io"
 
   [params.footer]
       copyright = "© Parameswaran V Vaidyanathan. All rights reserved."
+
+ # Add additional section names to mainSections to include posts from
+  # those sections on the homepage.
+  enableCDN             = false
+  mainSections          = ["blog"]
+  # Loads CSS and JavaScript files. The variable is an array so that you can load
+  # multiple/additional files if necessary. The standard theme files can be loaded
+  # by adding the value, "default". Default includes the add-on.css and and-on.js.
+  # Example: ["default", "/path/to/file"]
+  cssFiles              = ["default"]
+  jsFiles               = ["default"]
+  # Sets options for highlight.js
+  highlightjs           = true
+  highlightjsTheme      = "github"
+  highlightjsLang       = ["html", "css", "js", "toml"]
+  # Sets where "View More Posts" links to
+  viewMorePostsLink     = "/blog"
+  # Activate Estimated Reading Times, which appear in the post headers
+  readingTime           = true
+  # Sets which Social Share links appear in posts.
+  # Options are twitter, facebook, reddit, linkedin, pinterest, email
+  socialShare           = ["twitter", "facebook", "reddit", "linkedin",
+                          "pinterest", "email"]

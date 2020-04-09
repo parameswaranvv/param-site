@@ -2,8 +2,9 @@
 showcase:
   enable: true
   title: "Hello, I’m Param"
-  subtitle: "Cloud Native Solutions Architect & Engineer"
-  description: "I currently work at <b>VMware</b> with the sole purpose of helping customers <b>modernize applications</b> the public/private cloud, and <b>transform their organization to move and deliver faster.</b>"
+  subtitle: "Cloud Solutions Architect & Full Stack Engineer"
+  description: "I currently work at <b>VMware</b> with the sole purpose of helping customers <b>modernize applications</b> to the public/private cloud,
+  and <b>transform their organization to move and deliver faster.</b>"
   image:
     x: "img/showcase/showcase.png"
     _2x: "img/showcase/showcase@2x.png"
@@ -13,7 +14,7 @@ showcase:
   button:
     icon: "icon-mail-fill"
     btnText: "Contact"
-    URL: "#contact_form"
+    URL: "#contact"
 
   socialLinks:
     - icon: "linkedin"
@@ -39,7 +40,7 @@ about:
     </p>'
   button:
     icon: "icon-smile-fill"
-    btnText: "About Me"
+    btnText: "LinkedIn"
     URL: "https://www.linkedin.com/in/parameswaranvv/"
   image:
     x: "images/profile.png"
@@ -58,7 +59,7 @@ education:
 experience:
   enable: true
   jobhistory:
-    title: "Job History"
+    title: "Work History"
     descriptionLine1: "Results driven hands-on Engineer/Architect with experience in spearheading the design, development, implementation and testing of Cloud Native IT Solutions using Domain Driven Design in the Java/JEE Platform."
     descriptionLine2: "Recognized Technology Leader, applying high impact technical solutions primarily by the use of Open Source Java Technologies/Frameworks to major business objectives, with capabilities that transcend IT Operation boundaries."
     descriptionLine3: "Adept with working at a leadership capacity to prioritize activities and achieve defined project objectives; able to effectively translate business requirements into the target technical solutions.
@@ -213,7 +214,7 @@ testimonial:
 
 # contact
 contact:
-  enable: true
+  enable: false
   title: "Contact"
   form:
     action: "https://docs.google.com/forms/d/e/1FAIpQLSf8vGOSA3AiN0ccvSd2tFDXp9uqdSSLdtUHvRtEfFiuMT_49w/formResponse?usp=pp_url"

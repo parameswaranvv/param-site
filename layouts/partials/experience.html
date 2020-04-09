@@ -13,19 +13,50 @@
                 {{ end }}
             </div>
             <div class="col-12 col-sm-6">
-                <h2 style="text-align:center;">{{ .Site.Data.homepage.experience.skills.title }}</h2>
-
-                <table class="bordered striped centered highlight">
-                    <tbody>
-                    {{ range .Site.Data.homepage.experience.skills.items }}
-                    <tr><td>
-                        <div>
-                            <div>{{ . }}</div>
+                <section id="site-sidebar">
+                    <section id="recent-posts">
+                        <h2 style="text-align:center;">{{ i18n "recent_posts" }}</h2>
+<!--                        <header>-->
+<!--                            <h1>{{ i18n "recent_posts" }}</h1>-->
+<!--                        </header>-->
+                        {{ range first (.Site.Params.sidebar.postAmount | default 6) (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+                        <div class="experience">
+                            <article class="mini-post background: #ccc;">
+                                <section style="background: #cccccc; border: transparent 1px rgba(160, 160, 160, 0.3);">
+                                    {{ .Render "featured" }}
+                                </section>
+                                <header style="background: #f2f2f2; border: transparent 1px rgba(160, 160, 160, 0.3);">
+                                    <h1><a href="{{ .RelPermalink }}" style="color: #0e2231; font-size: 24px;">{{ .Title }}</a></h1>
+                                    <time class="published" datetime="">{{ default (i18n "date_format") | .Date.Format }}</time>
+                                </header>
+                            </article>
                         </div>
-                    </td></tr>
-                    {{ end }}
-                    </tbody>
-                </table>
+                        {{ end }}
+<!--                        {{ if ge (len (where site.RegularPages "Type" "in" site.Params.mainSections)) (.Site.Params.sidebar.postAmount | default 5) }}-->
+                        <div class="experience">
+                            <a href="{{ with .Site.Params.viewMorePostsLink }}{{ . | relLangURL }}{{ else }}{{ "blog" | relLangURL }}{{ end }}" class="btn btn-primary" >
+                                {{ i18n "see_more" }}
+                            </a>
+<!--                            <a href="{{ with .Site.Params.viewMorePostsLink }}{{ . | relLangURL }}{{ else }}{{ "blog" | relLangURL }}{{ end }}" class="button">{{ i18n "see_more" }}</a>-->
+                        </div>
+<!--                        {{ end }}-->
+                    </section>
+                </section>
+
+
+<!--                <h2 style="text-align:center;">{{ .Site.Data.homepage.experience.skills.title }}</h2>-->
+
+<!--                <table class="bordered striped centered highlight">-->
+<!--                    <tbody>-->
+<!--                    {{ range .Site.Data.homepage.experience.skills.items }}-->
+<!--                    <tr><td>-->
+<!--                        <div>-->
+<!--                            <div>{{ . }}</div>-->
+<!--                        </div>-->
+<!--                    </td></tr>-->
+<!--                    {{ end }}-->
+<!--                    </tbody>-->
+<!--                </table>-->
 
 <!--                <p class="lead">-->
 <!--                    {{ .Site.Data.homepage.experience.descriptionLine1 }}-->

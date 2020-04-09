@@ -4,3 +4,6 @@
 [submodule "parameswaranvv.github.io"]
 	path = parameswaranvv.github.io
 	url = https://github.com/parameswaranvv/parameswaranvv.github.io.git
+[submodule "themes/hugo-future-imperfect-slim"]
+	path = themes/hugo-future-imperfect-slim
+	url = https://github.com/pacollins/hugo-future-imperfect-slim.git
