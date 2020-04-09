@@ -58,5 +58,6 @@ jobs:
           deploy_key: ${{ secrets.GHPAGESTOKEN }}
           external_repository: parameswaranvv/parameswaranvv.github.io
           publish_dir: ./parameswaranvv.github.io
+          publish_branch: master
           user_name: 'Param'
           user_email: 'parameswaranvv@gmail.com'
