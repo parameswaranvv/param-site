@@ -1,0 +1,1 @@
+![Deploy Static Site](https://github.com/parameswaranvv/param-site/workflows/Deploy%20Static%20Site/badge.svg?branch=master)
