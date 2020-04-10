@@ -11,12 +11,6 @@ categories:
 author: Param V V
 ---
 
-# struts-spring-example
-
-## Migrating a Struts 1 application to Spring Boot
-
-## Steps to migrate:
-
 __This document outlines the steps necessary to make the bare minimum changes to a Struts 1 Web application, to eliminate the dependency on a hosted container and instead, operate as a Spring Boot application with embedded container.__
 
 __Dependencies__
