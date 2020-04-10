@@ -16,7 +16,7 @@
                 <section id="site-sidebar">
                     <section id="recent-posts">
                         <h2 style="text-align:center;">{{ i18n "recent_posts" }}</h2>
-                        {{ range first (.Site.Params.sidebar.postAmount | default 4) (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+                        {{ range first (.Site.Params.sidebar.postAmount | default 4) site.RegularPages}}
                         <div class="experience">
                             <article class="mini-post background: #ccc;">
                                 <section style="background: #f2f2f2; border: transparent 1px rgba(160, 160, 160, 0.3);">
