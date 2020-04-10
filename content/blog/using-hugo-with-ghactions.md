@@ -1,5 +1,5 @@
 ---
-title: "Deploying Hugo based Static Site With GitHub Actions on Github Pages"
+title: "Hugo Static Site Deployment with  GH Actions"
 date: 2020-04-10T10:34:33-05:00
 draft: false
 description: "This documents outlines the steps involved hosting a static website built using Hugo, on GitHub and deploying using Github Actions."
@@ -14,7 +14,7 @@ author: Param V V
 ReadingTime: 10 min
 ---
 
-__Steps outlined below:__
+__Outlining the steps below to able to deploy a Hugo based Static Site to Github Pages using Github Actions__
 
 ### 1. Repository creation
 

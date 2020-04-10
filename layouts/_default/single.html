@@ -76,10 +76,10 @@
                 {{ .Render "comments" }}
                 <div class="pagination">
                     {{ if .PrevInSection }}
-                    <a href="{{ .PrevInSection.RelPermalink }}" class="btn btn-primary" style="color: #212529; background-color: rgba(255,255,255,0);"><div class="previous"><div>Previous: {{ .PrevInSection.Title }}</div></div></a>
+                    <a href="{{ .PrevInSection.RelPermalink }}" class="btn btn-primary" style="margin: 1em; width: 50%; color: #212529; background-color: rgba(255,255,255,0);"><div class="previous"><div>Previous: {{ .PrevInSection.Title }}</div></div></a>
                     {{ end }}
                     {{ if .NextInSection }}
-                    <a href="{{ .NextInSection.RelPermalink }}" class="btn btn-primary" style="color: #212529; background-color: rgba(255,255,255,0);"><div class="next"><div>Next: {{ .NextInSection.Title }}</div></div></a>
+                    <a href="{{ .NextInSection.RelPermalink }}" class="btn btn-primary" style="margin: 1em; width: 50%; color: #212529; background-color: rgba(255,255,255,0);"><div class="next"><div>Next: {{ .NextInSection.Title }}</div></div></a>
                     {{ end }}
                 </div>
 
