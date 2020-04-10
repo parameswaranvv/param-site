@@ -1,0 +1,25 @@
+<header style="height: auto; border-bottom: solid 1px rgba(160,160,160,.3);">
+    <div class="row flex-column-reverse flex-md-row rad-fade-down" style="margin-left: 0px; margin-right: 0px; line-height: 1.0;">
+        <div class="title" style="border-right: solid 1px rgba(160,160,160,.3); left: 0; padding: 2em 0em; width: 75%; box-sizing: border-box; display: block;">
+            {{ if $.Scratch.Get "h1" }}
+            <h1><a href="{{ .RelPermalink }}" style="color: #495057; background-color: transparent; font-family: raleway,Helvetica,sans-serif;">{{ .Title }}</a></h1>
+            {{ $.Scratch.Set "h1" false }}
+            {{ else }}
+            <h2><a href="{{ .RelPermalink }}" style="color: #495057; background-color: transparent; font-family: raleway,Helvetica,sans-serif;">{{ .Title }}</a></h2>
+            {{ end }}
+            {{ with .Description }}
+            <p>{{ . }}</p>
+            {{ end }}
+        </div>
+        <div class="meta" style="border-left: solid 1px rgba(160,160,160,.3); right: 0; display: flex; flex-direction: column; padding: 2em 1em; width: 25%;">
+            <time class="published" datetime="{{ .Date }}" style="font-family: raleway,Helvetica,sans-serif; font-size: .7em; font-weight: 800; letter-spacing: .25em; text-transform: uppercase;">
+                {{ default (i18n "date_format") | .Date.Format }}
+            </time>
+            <br/>
+            <span class="author" style="font-family: raleway,Helvetica,sans-serif; font-size: .6em; letter-spacing: .25em; text-transform: uppercase;">{{ .Params.author }}</span>
+            {{ if .Site.Params.ReadingTime }}
+            <p style="font-family: raleway,Helvetica,sans-serif; font-size: .6em; letter-spacing: .25em; text-transform: uppercase;">{{ i18n "postreadingtime" .ReadingTime }}</p>
+            {{ end }}
+        </div>
+    </div>
+</header>

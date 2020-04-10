@@ -56,47 +56,38 @@
 </header>
 
 <section class="rad-showcase rad-showcase--index rad-animation-group rad-fade-down">
-    <div class="rad-showcase__bg">
-        <img
-                class="lozad img-responsive"
-                src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
-                data-src="{{ .Site.Data.homepage.showcase.image.x | absURL }}"
-                data-srcset="{{ .Site.Data.homepage.showcase.image.x | absURL }} 1x, {{ .Site.Data.homepage.showcase.image._2x | absURL }} 2x"
-                alt="Showcase keyboard and mouse image"
-        />
-    </div>
+
     <div class="container">
-        <div class="row">
-            <div class="col-12 col-sm-12 col-md-8 col-lg-7 col-xl-6">
-                <h1 class="display-1">
-                    {{ .Site.Data.homepage.showcase.title }}
-                    <br />
-                    <span
-                    >{{ .Site.Data.homepage.showcase.subtitle }}</span
-                    >
-                </h1>
-                <p class="lead">
-                    {{ .Site.Data.homepage.showcase.description | safeHTML }}
-                </p>
+        <div class="row" style="margin-right: 0; margin-left: 0;">
+            <div id="wrapper" style="width: 100%;">
+                <main id="site-main" style="padding-top: 120px;">
+                {{ $paginator := .Paginate (.Pages) }}
+                {{ range $paginator.Pages }}
+                        <article class="post">
+                            {{ .Render "blogheader" }}
+                            {{ .Render "featured" }}
+                            {{ $.Scratch.Set "summary" ((delimit (findRE "<p.*?>(.|\n)*?</p>" .Content 1) "") | truncate (default 500 .Site.Params.summary_length) (default "&hellip;" .Site.Params.text.truncated ) | replaceRE "&amp;" "&" | safeHTML) }}
+                            {{ $.Scratch.Get "summary" }}
+                            <footer>
+                                <a href="{{ .RelPermalink }}" class="button big"
+                                style="margin: 1em auto;
+                                width: 100%; margin: .25em 0; background-color: transparent; border: solid 1px rgba(160,160,160,.3);
+                                color: #3c3b3b; cursor: pointer; display: inline-block; font-family: raleway,Helvetica,sans-serif; font-weight: 800;
+                                -moz-transition: background-color .2s ease,border .2s ease,color .2s ease;
+                                -webkit-transition: background-color .2s ease,border .2s ease,color .2s ease;
+                                -ms-transition: background-color .2s ease,border .2s ease,color .2s ease;
+                                transition: background-color .2s ease,border .2s ease,color .2s ease;
+                                text-align: center; text-transform: uppercase; width: border-box;
+                                font-size: .6em; height: 4.8125em; letter-spacing: .25em; line-height: 4.8125em; padding: 0 2em;"
+                                >{{ i18n "read_more" }}</a>
+                            </footer>
+                        <br/>
+                        </article>
+                    {{ end }}
+                    {{ partial "pagination" . }}
+                </main>
             </div>
         </div>
-        <div class="row platform-links">
-            <div class="col-12">
-                {{ range .Site.Data.homepage.showcase.socialLinks }}
-                <a href="{{ .URL | absURL }}" target="_blank"
-                ><i class="icon-{{ .icon }}-line"></i
-                ></a>
-                {{ end }}
-            </div>
-        </div>
-    </div>
-    <div class="rad-showcase__bg rad-showcase__bg--mobile">
-        <img
-                class="lozad img-responsive"
-                src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
-                data-src="{{ .Site.Data.homepage.showcase.imageMobile.x | absURL }}"
-                alt="Showcase keyboard and mouse image"
-        />
     </div>
 </section>
 

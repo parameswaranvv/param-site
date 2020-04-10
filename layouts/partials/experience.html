@@ -19,13 +19,13 @@
 <!--                        <header>-->
 <!--                            <h1>{{ i18n "recent_posts" }}</h1>-->
 <!--                        </header>-->
-                        {{ range first (.Site.Params.sidebar.postAmount | default 6) (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+                        {{ range first (.Site.Params.sidebar.postAmount | default 4) (where site.RegularPages "Type" "in" site.Params.mainSections) }}
                         <div class="experience">
                             <article class="mini-post background: #ccc;">
-                                <section style="background: #cccccc; border: transparent 1px rgba(160, 160, 160, 0.3);">
+                                <section style="background: #f2f2f2; border: transparent 1px rgba(160, 160, 160, 0.3);">
                                     {{ .Render "featured" }}
                                 </section>
-                                <header style="background: #f2f2f2; border: transparent 1px rgba(160, 160, 160, 0.3);">
+                                <header style="background: #f2f2f2; border: transparent 1px rgba(160, 160, 160, 0.3); padding-left: 24px; padding-right: 24px;">
                                     <h1><a href="{{ .RelPermalink }}" style="color: #0e2231; font-size: 24px;">{{ .Title }}</a></h1>
                                     <time class="published" datetime="">{{ default (i18n "date_format") | .Date.Format }}</time>
                                 </header>
