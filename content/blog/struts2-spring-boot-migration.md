@@ -9,6 +9,7 @@ categories:
     - application-modernization
     - replatforming
 author: Param V V
+ReadingTime: 10 min
 ---
 
 __This document outlines the steps necessary to make the bare minimum changes to a Struts 2 Web application, to eliminate the dependency on a hosted container and instead, operate as a Spring Boot application with embedded container.__

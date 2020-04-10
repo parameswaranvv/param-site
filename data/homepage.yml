@@ -39,8 +39,8 @@ about:
      like <b>Event Storming</b>, BORIS drill-down, and adopting <b>Design Thinking</b> and XP principles with TDD to establish a faster rate of quality delivery.
     </p>'
   button:
-    icon: "icon-smile-fill"
-    btnText: "LinkedIn"
+    icon: "fab fa-linkedin-in"
+    btnText: " Profile"
     URL: "https://www.linkedin.com/in/parameswaranvv/"
   image:
     x: "images/profile.png"

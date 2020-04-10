@@ -50,6 +50,7 @@ publishDir = "parameswaranvv.github.io"
   [[menu.blog]]
   name = "Resume"
   URL = "/docs/resume.pdf"
+  floating = true
   weight = 3
 
   [[menu.blog]]

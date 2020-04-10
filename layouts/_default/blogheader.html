@@ -17,9 +17,7 @@
             </time>
             <br/>
             <span class="author" style="font-family: raleway,Helvetica,sans-serif; font-size: .6em; letter-spacing: .25em; text-transform: uppercase;">{{ .Params.author }}</span>
-            {{ if .Site.Params.ReadingTime }}
-            <p style="font-family: raleway,Helvetica,sans-serif; font-size: .6em; letter-spacing: .25em; text-transform: uppercase;">{{ i18n "postreadingtime" .ReadingTime }}</p>
-            {{ end }}
+            <p style="color: #000; font-weight: 400; font-family: raleway,Helvetica,sans-serif; font-size: .6em; letter-spacing: .25em; text-transform: uppercase;">Reading Time: {{ .Params.ReadingTime }}</p>
         </div>
     </div>
 </header>
