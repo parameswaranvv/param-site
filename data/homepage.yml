@@ -43,8 +43,8 @@ about:
     btnText: " Profile"
     URL: "https://www.linkedin.com/in/parameswaranvv/"
   image:
-    x: "images/profile.png"
-    _2x: "images/profile.png"
+    x: "images/Big_Profile.jpg"
+    _2x: "images/Big_Profile.jpg"
 
 # education
 education:
