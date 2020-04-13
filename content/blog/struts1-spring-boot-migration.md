@@ -14,7 +14,7 @@ ReadingTime: 10 min
 
 __This document outlines the steps necessary to make the bare minimum changes to a Struts 1 Web application, to eliminate the dependency on a hosted container and instead, operate as a Spring Boot application with embedded container.__
 
-__Dependencies__
+## Dependencies
 ```xml
     <dependencies>
         <dependency>
@@ -84,7 +84,7 @@ __Dependencies__
     </dependencies>
 ``` 
 
-__Plugins__
+## Plugins
 ```xml
         <plugins>
             <plugin>
@@ -108,7 +108,7 @@ __Plugins__
             </plugin>
         </plugins>
 ```
-__Properties__
+## Properties
 ```xml
     <properties>
         <maven.compiler.source>1.6</maven.compiler.source>
@@ -116,6 +116,7 @@ __Properties__
     </properties>
 ```
 
+## Code Changes
 * Keep `web.xml` as is. It is required because the Struts 1.x ActionServlet eagerly looks for the presence
 of the web.xml.
 * Add a `ServletRegistration` Bean in the Spring Boot Application class, that configures the

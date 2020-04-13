@@ -43,6 +43,6 @@ jobs:
           external_repository: parameswaranvv/parameswaranvv.github.io
           publish_dir: ./parameswaranvv.github.io
           publish_branch: master
-          force_orphan: true
+          force_orphan: false
           user_name: 'Param'
           user_email: 'parameswaranvv@gmail.com'

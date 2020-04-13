@@ -15,7 +15,7 @@ ReadingTime: 10 min
 __This document outlines the steps necessary to make the bare minimum changes to a Struts 2 Web application, to eliminate the dependency on a hosted container and instead, operate as a Spring Boot application with embedded container.__
 
 
-__Dependencies__
+## Dependencies
 ```xml
         <dependency>
             <groupId>javax.servlet</groupId>
@@ -89,7 +89,7 @@ __Dependencies__
         </dependency>
 ``` 
 
-__Plugins__
+## Plugins
 ```xml
         <plugins>
             <plugin>
@@ -113,13 +113,15 @@ __Plugins__
             </plugin>
         </plugins>
 ```
-__Properties__
+## Properties
 ```xml
     <properties>
         <maven.compiler.source>1.6</maven.compiler.source>
         <maven.compiler.target>1.6</maven.compiler.target>
     </properties>
 ```
+
+## Code Changes
 
 * Remove web.xml and add a Spring Boot application class. 
 * Add a Spring Configuration to register the Struts Filter Dispatcher

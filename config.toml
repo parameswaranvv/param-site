@@ -92,3 +92,22 @@ publishDir = "parameswaranvv.github.io"
   # Options are twitter, facebook, reddit, linkedin, pinterest, email
   socialShare           = ["twitter", "facebook", "reddit", "linkedin",
                           "pinterest", "email"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.parser]
+      attribute = true
+      autoHeadingID = true
+      autoHeadingIDType = "github"
+    [markup.goldmark.renderer]
+      hardWraps = false
+      unsafe = true
+      xhtml = false

@@ -16,25 +16,25 @@ ReadingTime: 10 min
 
 __Outlining the steps below to able to deploy a Hugo based Static Site to Github Pages using Github Actions__
 
-### 1. Repository creation
+## Repository creation
 
 * The first repository will host the website. It needs to be named as: `<github_username>.github.io`. 
     For example, my website repository is named as `parameswaranvv.github.io`
 * The second repository will host the site in development. So, it can be named in any way.
     For example, my site content repository is named as `param-site`.
     
-### 2. Site content development 
+## Site content development 
 
 * Clone the `param-site` repository locally and within the directory, we will develop our content for the website. I used Hugo to generate my website content and I customized it to my needs.
 * Clone the other repository `parameswaranvv.github.io` as a submodule within the root of the current repository. We will build our code in the current repository, and deploy it via the submodule to the other repository.
 
-### 3. Github Actions Pipeline script
+## Github Actions Pipeline script
 
 * Within the `param-site` directory, create a `.github/workflows/main.yml` which will contain the pipeline script for building and deploying our website to Github Pages in our website repository `parameswaranvv.github.io` .
 * For building the hugo site, we use the `peaceiris/actions-hugo@v2` action, and use the Hugo extended version to build. This is to enable processing of SCSS files for CSS.
 * For deploying the site to the `<username>.github.io` or `parameswaranvv.github.io` in my case, use the `peaceiris/actions-gh-pages@v3` with the options turned on to deploy to an external repository. Forcing orphan ensures a clean slate deployment always.
 
-##### Sample Pipeline Script    
+### Sample Pipeline Script    
 ```yaml
 # This is a basic workflow to help you get started with Actions
 
@@ -86,7 +86,7 @@ jobs:
           user_email: 'parameswaranvv@gmail.com'
 ```
 
-### 4. Handling Github Security Tokens while deploying across repositories.
+## Handling Github Security Tokens while deploying across repositories.
 
 * Create a SSH Public and Private Key using your email address locally on a UNIX machine.
 * Configure the SSH Private Key as a Github Secret Token named `GHPAGESTOKEN` on the `param-site` repository, where in the pipeline is hosted.
