@@ -1,5 +1,5 @@
 ---
-title: "Hugo Static Site Deployment with  GH Actions"
+title: "Hugo Static Site Deployment with  Github Actions"
 date: 2020-04-10T10:34:33-05:00
 draft: false
 description: "This documents outlines the steps involved hosting a static website built using Hugo, on GitHub and deploying using Github Actions."

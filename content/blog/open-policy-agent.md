@@ -1,5 +1,5 @@
 ---
-title: "Open Policy Agent (OPA) - as a Kubernetes Pod Sidecar container"
+title: "API Authorization using Open Policy Agent (OPA) as a Sidecar Container"
 date: 2020-04-13T15:59:28-05:00
 draft: false
 description: "Using Open Policy Agent as a Sidecar container for REST Endpoint Authorization"
