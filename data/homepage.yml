@@ -68,26 +68,32 @@ experience:
       - title: "Senior Solutions Architect"
         company: "VMware Inc."
         duration: "Jan 2020 - Current"
+        type: Full-time
 
       - title: "Senior Solutions Architect"
         company: "Pivotal Software Inc."
         duration: "Sept 2018 - Dec 2019"
+        type: Full-time
 
       - title: "Senior Software Engineer"
         company: "Capital One Financial Services"
         duration: "Jan 2017 - Sept 2018"
+        type: Full-time
 
       - title: "Software Engineer"
         company: "Capital One Financial Services"
         duration: "Dec 2015 - Dec 2016"
+        type: Full-time
 
       - title: "Senior Java Developer"
-        company: "KForce Inc."
+        company: "Verizon Wireless Inc."
         duration: "Jun 2015 - Dec 2015"
+        type: Contract
 
       - title: "Lead Java Developer"
-        company: "Tata Consultancy Services Ltd."
+        company: "CVS Health"
         duration: "Oct 2008 - June 2015"
+        type: Contract
 
   skills:
     title: Skills
