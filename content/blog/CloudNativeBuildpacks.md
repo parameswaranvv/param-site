@@ -19,6 +19,10 @@ ReadingTime: 10 min
 
 The widespread adoption of Containerized workloads to be run on cloud platforms, has given rise to two interesting problems:
 
+### Developer Productivity
+
+<div style="alignment: center"><img src="/images/cnb/developer-productivity.png" /></div></br>
+
 First, developers writing Dockerfiles (assuming Docker is the preferred container runtime), to deal with how their applications should be installed on the container OS image, along with what kind of dependencies are required. This takes away time from the developers when they could actually invest more time in developing and delivering business features. 
 Furthermore, the developers are burdened by:
 * having to understand what kind of a container OS image should be used for a base image
@@ -26,6 +30,11 @@ Furthermore, the developers are burdened by:
 * having to understand and code a condusive environment including Networking for the application to operate within the container and in the external ecosystem
 * ensure the container image that is created in the end conforms to full security policies as laid out by their organization
 * periodically maintain/apply security patches and remediate vulnerabilities as dictated by the enterprise
+* increase in counter-productive time for developers
+    
+### Container Security
+
+<div style="alignment: center"><img style="alignment: center" src="/images/cnb/container-security.png" /></div></br>
 
 Second, the operators need to ensure proper OS Patches are propagated across all the VMs and containers as per security and compliance standards. But,
 * with a large scale ecosystem with more than 100s or 1000s of containers with different container OS images makes it difficult to roll out the patches for maybe a CVE that is found
